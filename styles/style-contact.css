@@ -1,0 +1,105 @@
+.contacttitre {
+    background-image: linear-gradient(rgba(25,25,25,0.40),rgba(25,25,25,0.40)), url("../images/about-bg-2.jpg");
+    background-position: 50% 0%;
+}
+
+.contactmain {
+    height: 590px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.form {
+    width: 550px;
+}
+
+.contactmain h2 {
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.contactmain form {
+    margin-top: 60px;
+}
+
+.contactform input {
+    width: 97%;
+    height: 48px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Noto Sans';
+    padding: 0px 10px;
+    border: 0.5px ridge rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+}
+
+.contactform textarea {
+    width: 97%;
+    height: 90px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Noto Sans';
+    padding: 10px;
+    border: 0.5px ridge rgba(0, 0, 0, 0.15);
+    border-style:ridge;
+}
+
+.contactform input:focus, .contactform textarea:focus {
+    outline: none;
+    border: 1px dotted;
+}
+
+.contactmain .bouton {
+    color: white;
+    border: none;
+}
+
+.contact {
+    max-width: 550px;
+    min-width: 300px;
+}
+
+.contact img {
+    width: 39px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.contact img:hover {
+    filter: brightness(0.4) grayscale(100%);
+    
+    
+}
+@media all and (max-width : 1024px) {
+    .form {
+        width: 50%;
+    }
+    .contactmain {
+        padding-left: 50px;
+        gap: 50px;
+    }
+    .contact {
+        width: 50%;
+        min-width: 0px;
+    }
+}
+@media all and (max-width : 767px) {
+    .contactmain {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 900px;
+        margin-top: 50px;
+    }
+    .form, .contact {
+        width: 100%;
+    }
+    .contact {
+        margin-top: 80px;
+    }
+    .contactmain form {
+        margin-top: 30px;
+    }
+}
