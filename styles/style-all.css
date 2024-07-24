@@ -60,6 +60,23 @@ h2 {
     align-items: center;
 }
 
+.returnTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    opacity: 0%;
+}
+.returnTop img {
+    width: 100%;
+}
+.returnTop :hover {
+    position: fixed;
+    width: 100px;
+    right: 20px;
+    bottom: 30px;
+}
+
 @media all and (max-width : 920px) {
     .bouton {
         font-size: 0.8em;
@@ -147,6 +164,24 @@ header div img {
     display: none;
 }
 
+.headerfixed {
+    opacity: 0%;
+    background-color: rgba(70, 70, 70, 0.95);
+    position: fixed;
+}
+
+.appear {
+    opacity: 100%;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.disappear {
+    opacity: 0%;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
 @media all and (min-width : 921px) and (max-width : 1240px) {
     header {
         display: block;    
@@ -208,6 +243,10 @@ header div img {
     }
     .navtoggle .bouton {
         display: none;
+    }
+    .headerfixed {
+        background-color: white;
+        border-bottom: solid rgba(70, 70, 70, 0.95) 1.5px;
     }
 }
 
